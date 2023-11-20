@@ -3,14 +3,14 @@ package com.example.studentmanagerment.model;
 
 import java.util.Objects;
 
-public class Student {
+public class StudentDTO {
     private long id;
     private String name;
     private int age;
     private String address;
     private String phone;
 
-    public Student(long id, String name, int age, String address, String phone) {
+    public StudentDTO(long id, String name, int age, String address, String phone) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -62,7 +62,7 @@ public class Student {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Student student = (Student) o;
+        StudentDTO student = (StudentDTO) o;
         return Objects.equals(id, student.id);
     }
 

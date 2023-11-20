@@ -1,6 +1,6 @@
 package com.example.studentmanagerment.controller;
 
-import com.example.studentmanagerment.model.Student;
+import com.example.studentmanagerment.model.StudentDTO;
 import com.example.studentmanagerment.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +19,7 @@ public class StudentController {
     }
 
     @GetMapping("")
-    public List<Student> getAllStudent(){
+    public List<StudentDTO> getAllStudent(){
         return null;
     }
 }
